@@ -1,0 +1,17 @@
+/* Lecture used fixed width: 500px; we use max-width + 100% so the search bar
+   does not overflow on mobile viewports (same responsive fix as Register.css). */
+.search-bar {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.search-type-group {
+  margin-top: 6px;
+}
+
+.error-msg {
+  height: 22px;
+  color: #ff4d4f;
+  margin: 0;
+}

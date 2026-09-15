@@ -1,0 +1,15 @@
+.home {
+  width: min(1100px, calc(100% - 32px));
+  margin: 96px auto 32px;
+}
+
+.display {
+  margin-top: 24px;
+}
+
+.video-block {
+  display: block;
+  width: 100%;
+  max-height: 70vh;
+  background: #000;
+}

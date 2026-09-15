@@ -1,0 +1,11 @@
+.register {
+  max-width: 500px;
+  width: 100%;
+  margin: 200px auto;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+.register-btn {
+  width: 100%;
+}

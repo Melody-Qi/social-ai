@@ -3,14 +3,28 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@ant-design/icons": "^5.6.1",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/icons-material": "^9.3.1",
+    "@mui/material": "^9.3.1",
+    "@mui/styled-engine-sc": "^9.3.0",
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
     "@testing-library/user-event": "^13.5.0",
-    "react": "^19.2.8",
-    "react-dom": "^19.2.8",
+    "antd": "^5.29.3",
+    "axios": "^1.6.7",
+    "openai": "^4.56.0",
+    "prop-types": "^15.8.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-photo-album": "^2.3.1",
+    "react-router-dom": "^6.30.4",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "styled-components": "^6.5.3",
+    "web-vitals": "^2.1.4",
+    "yet-another-react-lightbox": "^3.19.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -22,6 +36,17 @@
     "extends": [
       "react-app",
       "react-app/jest"
+    ]
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "^axios$": "<rootDir>/node_modules/axios/dist/browser/axios.cjs",
+      "^yet-another-react-lightbox/plugins/([a-z]+)$": "<rootDir>/node_modules/yet-another-react-lightbox/dist/plugins/$1/index.js",
+      "^yet-another-react-lightbox/plugins$": "<rootDir>/node_modules/yet-another-react-lightbox/dist/plugins/index.js",
+      "^yet-another-react-lightbox$": "<rootDir>/node_modules/yet-another-react-lightbox/dist/index.js"
+    },
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\](?!(yet-another-react-lightbox|react-photo-album|@mui|@emotion|axios)/).+\\.(js|mjs|jsx|ts|tsx)$"
     ]
   },
   "browserslist": {
