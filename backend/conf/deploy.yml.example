@@ -1,0 +1,16 @@
+# 部署配置模板 —— 复制成 deploy.yml 后填入真实值。
+#
+# deploy.yml 本体已在 .gitignore 中，永远不会进版本库：
+# 这个文件中的 password / secret 是真实凭据，一旦提交到公开仓库，
+# 光靠"再删一次"是删不干净的。
+
+elasticsearch:
+  address: "http://REPLACE_ME:9200"
+  username: "REPLACE_ME"
+  password: "REPLACE_ME"
+
+gcs:
+  bucket: "REPLACE_ME"
+
+token:
+  secret: "REPLACE_ME"
